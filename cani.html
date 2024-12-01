@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assignment</title>
+  <link rel="stylesheet" href="can.css">
+</head>
+<body>
+
+  <!-- Undo/Redo Header -->
+  <div class="header">
+    <button id="undoButton">
+      <img src="https://img.icons8.com/ios-glyphs/30/null/undo.png" alt="Undo">
+      Undo
+    </button>
+    <button id="redoButton">
+      <img src="https://img.icons8.com/ios-glyphs/30/null/redo.png" alt="Redo">
+      Redo
+    </button>
+  </div>
+
+  <!-- Canvas Section -->
+  <div class="canvas-container">
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <input type="text" id="textInput" class="text-input">
+  </div>
+
+  <!-- Footer Controls -->
+  <div class="footer">
+    <select id="fontSelect">
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+    </select>
+
+    <input type="number" id="fontSize" value="16" min="10" max="50" step="1">
+  
+
+    
+        <button class="bold" id="boldButton">B</button>
+        <button class="italic" id="italicButton">I</button>
+        <button class="underline" id="underlineButton">U</button>
+    
+        <button class="add-text" id="addTextButton">Add Text</button>
+      </div>
+
+
+<script src="can.js"></script>
+</body>
+</html>
